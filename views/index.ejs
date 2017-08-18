@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+    <div id="ab"  class="container">
+      <h1> Welcome to my Blogs </h1>
+    
+        <ul id="mainul"class="list-group">
+          <% aks.forEach(function(blog) {%>
+            <h2 class="label label-default">Title: </h2>
+            <li class="list-group-item list-group-item-warning"><%= blog.title %>&nbsp&nbsp&nbsp&nbsp</li></br>
+            <h3 class="label label-default">Author: </h3>
+            <li class="list-group-item list-group-item-success"><%= blog.author %></li></br>
+            <h3 class="label label-default">Content: </h3>
+            <li class="list-group-item list-group-item-danger"><%= blog.content %></li></br>
+            <% if(user){ %>
+            <a class='btn btn-default' href='/edit/<%= blog._id %>'>Edit</a>&nbsp&nbsp&nbsp&nbsp<a id='delete' class='btn btn-danger' href='#' Data.id ='<%=blog._id %>'>Delete</a>
+             <% } %>
+            <hr>
+          <% }) %>
+        </ul>
+   
+    </div>
+<% include partials/footer %>

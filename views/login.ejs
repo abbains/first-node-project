@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>
+      Akshay's Blogs
+    </title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="/css/maincss.css">
+    </link>
+
+  </head>
+  <div id="login" class="container">
+    <h1> Login Yourself:</h1>
+    <form  method="POST" action="/users/login" >
+      <label class="label label-default"> Username: </label></br>
+      <input class="form-control" type="text" name= "username"/></br>
+      <label class="label label-default"> password: </label></br>
+      <input class="form-control" type="password" name= "password"/></br>
+      <button class="btn btn-default btn-lg" type="submit">Login</button>
+      <a href="/users/register" > or Register </a>
+    </form>
+  </div>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/main/main.js"></script>
+   
+</body>
+</html>
+

@@ -1,0 +1,47 @@
+
+body{
+  display: block;
+  margin: 12px;
+  background-color:rgb(241, 234, 234)
+}
+#ab{
+  margin-top: 60px;
+}
+#register{
+  width: 600px; 
+  height: 580px;
+   display: auto;
+   margin-top:140px
+}
+#navdiv{
+  margin: 8px;
+}
+#login{
+  margin-top:200px;
+  width: 400px;
+  padding: 5px 5px;
+  display: auto;
+}
+#nav{
+  background-color: rgb(144, 52, 24);
+}
+#update{
+  border-radius: 8px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#username{
+  text-shadow: 1px 1px;
+  text-align: center;
+  color: wheat;
+  margin: 14px 10px;
+  
+}

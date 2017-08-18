@@ -1,0 +1,14 @@
+<% include partials/header %>
+  <div id="ab" class="container">
+    <h1> You are welcome to write </h1>
+      <form  method="POST" action="/add" >
+        <label class="label label-default"> Title: </label></br>
+        <input class="form-control" type="text" name= "title"/></br>
+        <label class="label label-default"> Author: </label></br>
+        <input class="form-control" type="text" name= "author"/></br>
+        <label class="label label-default"> Content: </label></br>
+        <textarea class="form-control" name= "content" ></textarea></br>
+        <button id="update" class="btn btn-default btn-lg" rows="8" type="submit">Add</button>
+      </form>
+  </div>
+<% include partials/footer %>

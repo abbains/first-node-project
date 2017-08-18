@@ -1,0 +1,15 @@
+<% include partials/header %>
+    <div id="ab" class="container">
+      <h1> You are welcome to edit </h1>
+      <% blog.forEach(function(Sblog) { %>
+      <form  method="POST" action=''/edit/<%= Sblog._id %>'>
+        <label class="label label-default"> Title: </label></br>
+        <input class="form-control" type="text" name= "title" value="<%= Sblog.title %>" /></br>
+        <label class="label label-default"> Author: </label></br>
+        <input class="form-control" type="text" name= "author" value="<%= Sblog.author %>" /></br>
+        <label class="label label-default"> Content: </label></br>
+        <textarea rows="10" class="form-control" name= "content"><%= Sblog.content %></textarea></br>
+        <button id="update" class="btn btn-default btn-lg" type="submit" >Update</button>
+      </form>
+      <% }); %>
+<% include partials/footer %>
